@@ -4,8 +4,8 @@ if [ ! -d /u01/middleware/apache-tomcat-10.1.31 ]; then
     sudo mkdir -p /u01/middleware
     sudo chown ubuntu:ubuntu -R /u01
 
-    # Download Tomcat
-    TOMCAT_URL="https://downloads.apache.org/tomcat/tomcat-10/v10.1.31/bin/apache-tomcat-10.1.31.tar.gz"
+    # Updated Download URL for Tomcat
+    TOMCAT_URL="https://archive.apache.org/dist/tomcat/tomcat-10/v10.1.31/bin/apache-tomcat-10.1.31.tar.gz"
     wget -O /u01/middleware/apache-tomcat-10.1.31.tar.gz "$TOMCAT_URL"
 
     # Verify download success before extraction
