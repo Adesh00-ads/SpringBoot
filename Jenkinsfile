@@ -4,7 +4,7 @@ pipeline {
     string 'JDK_VERSION'
     choice name: 'BUILD' ,choices: ['DEV','TEST','PROD']
     password name: 'DB_PASSWORD', defaultValue: 'test', description: 'db pwd'
-    test name: 'DESC'
+    text name: 'DESC'
     booleanParam name: 'DEPLOY', description: 'do you want to deploy'
   }
   stages {
